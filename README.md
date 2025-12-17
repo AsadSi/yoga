@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Forever Flexible Yoga – Next.js Site
 
-## Getting Started
+This is a custom [Next.js](https://nextjs.org) website for a yoga teacher offering Hatha, Ashtanga-inspired, and Yin classes, inspired by the existing online studio on [Forever Flexible (Teachable)](https://foreverflexible.teachable.com).
 
-First, run the development server:
+The site is built with:
+
+- Next.js (App Router, TypeScript)
+- Tailwind CSS
+- `next/image` with remote images (Pexels) for the default gallery
+
+## Getting started
+
+From the project root:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where to edit content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Most of the visible content lives in:
 
-## Learn More
+- `src/app/page.tsx` – hero, yoga services, About, Schedule & Pricing, gallery, video, and contact/footer.
+- `src/app/layout.tsx` – site-wide metadata (title and description).
 
-To learn more about Next.js, take a look at the following resources:
+Update these sections with your real details:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Teacher bio & experience** – in the `About your teacher` section.
+- **Schedule & pricing** – in the Schedule table and pricing list.
+- **Contact / booking** – update the `mailto:` email and any booking links.
+- **Video** – replace the YouTube `src` URL in the `iframe` with your own video.
+- **Images** – either:
+  - Keep using the default Pexels images, or
+  - Replace them with your own hosted images and, if needed, add their domains to `images.remotePatterns` in `next.config.ts`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Adding Pilates and other offerings later
 
-## Deploy on Vercel
+When you’re ready to add Pilates or other services:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Extend the **Services** section with a new card for Pilates.
+- Add new **schedule rows** and pricing options for Pilates.
+- Optionally add separate pages or sections (e.g. `/pilates`) if you want more detail.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+This app can be deployed to any platform that supports Next.js (e.g. Vercel, Netlify, or your own server). Follow that platform’s Next.js deployment guide and build with:
+
+```bash
+npm run build
+```
