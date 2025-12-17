@@ -10,7 +10,7 @@ export default function Membership() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-green-800/60 via-emerald-800/55 to-green-900/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-800/90 via-emerald-800/85 to-green-900/90"></div>
       </div>
       
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 z-10">

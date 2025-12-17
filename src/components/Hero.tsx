@@ -11,8 +11,8 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/50 via-stone-800/40 to-green-900/35"></div>
-        <div className="absolute inset-0 bg-green-700/8 mix-blend-multiply pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/30 via-stone-800/25 to-green-900/15"></div>
+        <div className="absolute inset-0 bg-green-700/4 mix-blend-multiply pointer-events-none"></div>
       </div>
       
       <div className="relative mx-auto max-w-[1600px] px-4 py-20 md:py-24 lg:py-28 sm:px-6 lg:px-8 w-full z-10">

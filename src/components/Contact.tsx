@@ -10,7 +10,7 @@ export default function Contact() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-green-800/55 via-emerald-800/50 to-green-900/55"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-800/90 via-emerald-800/85 to-green-900/90"></div>
       </div>
       
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-center z-10">

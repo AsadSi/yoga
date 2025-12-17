@@ -10,7 +10,7 @@ export default function Flexibility() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-stone-50/70 via-amber-50/60 to-green-50/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-stone-50/95 via-amber-50/90 to-green-50/95"></div>
       </div>
       
       <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 z-10">

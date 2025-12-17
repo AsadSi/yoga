@@ -10,7 +10,7 @@ export default function Yoga() {
           fill
           className="object-cover opacity-100"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-white/75 via-stone-50/65 to-amber-50/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-stone-50/90 to-amber-50/95"></div>
       </div>
       
       <div className="relative mx-auto max-w-[1600px] px-4 py-32 sm:px-6 lg:px-8 z-10">
