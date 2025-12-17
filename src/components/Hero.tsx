@@ -21,7 +21,7 @@ export default function Hero() {
             <span className="text-sm font-medium text-amber-100 uppercase tracking-[0.2em]">Not your average yoga studio</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-extralight text-white leading-tight tracking-tight mb-8 drop-shadow-lg">
+          <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-extralight text-white leading-tight tracking-tight mb-8 drop-shadow-lg">
             Forever
             <br />
             <span className="text-green-200 font-light">Flexible</span>
