@@ -2,7 +2,7 @@ import React from 'react';
 
 function Feature({ icon, children }: { icon: string; children: React.ReactNode }) {
   return (
-    <div className="flex items-center gap-3 text-stone-500">
+    <div className="flex items-center gap-3 text-brown-muted">
       <span className="w-4 h-4 flex-none" aria-hidden>
         {icon === 'book' && (
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="w-full h-full">
@@ -47,19 +47,19 @@ export default function Schedule() {
   ];
 
   return (
-    <section id="schedule" className="py-24 sm:py-32 bg-white">
+    <section id="schedule" className="py-24 sm:py-32 section-brown">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* Header Section */}
         <div className="grid lg:grid-cols-2 gap-16 mb-24 items-end">
           <div>
-            <h2 className="text-5xl sm:text-6xl font-extralight text-stone-900 tracking-tight leading-none">
+            <h2 className="text-5xl sm:text-6xl font-extralight text-brown tracking-tight leading-none">
               Schedule & <br />
-              <span className="italic font-light text-stone-400">Memberships</span>
+              <span className="italic font-light text-brown-muted">Memberships</span>
             </h2>
           </div>
           <div className="max-w-md">
-            <p className="text-lg text-stone-600 font-light leading-relaxed">
+            <p className="text-lg text-brown-muted font-light leading-relaxed">
               Transparent pricing for every stage of your practice. No hidden fees, just pure movement.
             </p>
           </div>
@@ -73,26 +73,26 @@ export default function Schedule() {
             { day: "Sunday", class: "Yin & Rest", time: "7:00 PM - 8:15 PM", loc: "Online (Zoom)" }
           ].map((item, i) => (
             <div key={i} className="flex flex-col">
-              <span className="text-stone-400 text-xs font-semibold mb-3 tracking-[0.2em] uppercase">{item.day}</span>
-              <h3 className="text-2xl font-light text-stone-900 mb-2">{item.class}</h3>
-              <p className="text-stone-500 font-light text-sm">{item.time}</p>
-              <p className="mt-4 text-[10px] text-stone-400 tracking-widest uppercase">{item.loc}</p>
+              <span className="text-brown-muted text-xs font-semibold mb-3 tracking-[0.2em] uppercase">{item.day}</span>
+              <h3 className="text-2xl font-light text-brown mb-2">{item.class}</h3>
+              <p className="text-brown-muted font-light text-sm">{item.time}</p>
+              <p className="mt-4 text-[10px] text-brown-muted tracking-widest uppercase">{item.loc}</p>
             </div>
           ))}
         </div>
 
         {/* Memberships Symmetrical Grid */}
         <div className="space-y-12">
-          <h3 className="text-3xl font-light text-stone-900">Memberships</h3>
+          <h3 className="text-3xl font-light text-brown">Memberships</h3>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {plans.map((plan) => (
               <div key={plan.name} className="flex flex-col p-8">
                 <div className="mb-8">
-                  <h4 className="text-sm font-medium text-stone-400 uppercase tracking-widest">{plan.name}</h4>
+                  <h4 className="text-sm font-medium text-brown-muted uppercase tracking-widest">{plan.name}</h4>
                   <div className="mt-2 flex items-baseline gap-1">
-                    <span className="text-4xl font-extralight text-stone-900">€{plan.price}</span>
-                    <span className="text-sm text-stone-400">/mo</span>
+                    <span className="text-4xl font-extralight text-brown">€{plan.price}</span>
+                    <span className="text-sm text-brown-muted">/mo</span>
                   </div>
                 </div>
 
@@ -106,12 +106,7 @@ export default function Schedule() {
                   ))}
                 </div>
 
-                <a
-                  href="#"
-                  className="block w-full text-center py-3.5 px-6 rounded-xl text-xs font-bold tracking-widest uppercase transition-all bg-stone-900 text-white hover:bg-stone-800"
-                >
-                  Start Free Trial
-                </a>
+                <a href="#" className="block w-full text-center py-3.5 px-6 rounded-xl text-xs font-bold tracking-widest uppercase transition-all btn-brown hover:bg-[#4d2a1b]">Start Free Trial</a>
               </div>
             ))}
           </div>
@@ -119,9 +114,9 @@ export default function Schedule() {
 
         {/* Footer Link */}
         <div className="mt-16 text-center">
-          <p className="text-stone-400 text-sm font-light">
+          <p className="text-brown-muted text-sm font-light">
             All memberships include a 7-day free trial. 
-            <a href="#" className="ml-2 text-stone-900 font-medium underline underline-offset-4">Manage billing</a>
+            <a href="#" className="ml-2 text-brown font-medium underline underline-offset-4">Manage billing</a>
           </p>
         </div>
       </div>

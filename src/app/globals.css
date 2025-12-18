@@ -3,6 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Brown / Beige palette */
+  --brown-900: #5b3426;
+  --brown-700: #8b5e3c;
+  --beige-50:  #f6efe6;
+  --beige-100: #efe6da;
 }
 
 @theme inline {
@@ -23,4 +28,23 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif);
+}
+
+/* Section helpers for a cohesive brown/beige look */
+.section-brown {
+  background: var(--beige-50);
+  color: var(--brown-900);
+}
+.text-brown { color: var(--brown-900); }
+.text-brown-muted { color: var(--brown-700); }
+.bg-brown { background-color: var(--brown-700); color: #fff; }
+.btn-brown { background-color: var(--brown-700); color: #fff; }
+
+/* Small utility to slightly tint image overlays */
+.brown-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(91,52,38,0.04), rgba(245,239,230,0.18));
+  pointer-events: none;
 }

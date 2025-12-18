@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center">
-      <div className="absolute inset-0">
+      {/* Background Layer */}
+      <div className="absolute inset-0 z-0">
         <Image
           src="/images/yoga-pose-1.jpg"
           alt="Yoga practice background"
@@ -11,41 +12,46 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-stone-900/30 via-stone-800/25 to-green-900/15"></div>
-        <div className="absolute inset-0 bg-green-700/4 mix-blend-multiply pointer-events-none"></div>
+        
+        {/* 1. Base Earthy Tint: Gives the whole image a warm brown wash */}
+        <div className="absolute inset-0 bg-[#3d2b1f]/40 mix-blend-multiply" />
+
+        {/* 2. Readability Scrim: Dark brown gradient that fades out to the right */}
+        {/* This ensures the text always has a high-contrast background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2a1b15]/90 via-[#2a1b15]/60 to-transparent" />
+        
+        {/* 3. Subtle Grain/Overlay (Optional): Keeps the "texture" of the brand */}
+        <div className="absolute inset-0 bg-[var(--brown-900)]/10 pointer-events-none" />
       </div>
       
       <div className="relative mx-auto max-w-[1600px] px-4 py-20 md:py-24 lg:py-28 sm:px-6 lg:px-8 w-full z-10">
         <div className="max-w-4xl">
-          <div className="mb-6">
-            <span className="text-sm font-medium text-amber-100 uppercase tracking-[0.2em]">Not your average yoga studio</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-5xl lg:text-6xl xl:text-8xl font-extralight text-white leading-tight tracking-tight mb-8 drop-shadow-lg">
+
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-white leading-tight tracking-tight mb-6 drop-shadow-xl">
             Forever
             <br />
-            <span className="text-green-200 font-light">Flexible</span>
+            <span className="text-[var(--beige-50)] font-light">Flexible</span>
           </h1>
-          
-          <div className="space-y-6 mb-12">
-            <p className="text-xl md:text-2xl sm:text-3xl text-white leading-relaxed font-light max-w-2xl drop-shadow-md">
+
+          <div className="space-y-4 mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/95 leading-relaxed font-light max-w-2xl drop-shadow-md">
               A movement and mindset for unlocking your body's potential.
             </p>
-            <p className="text-lg md:text-xl text-stone-50 leading-relaxed font-light max-w-xl drop-shadow-md">
+            <p className="text-[var(--beige-50)]/80 text-base md:text-lg leading-relaxed font-light max-w-md">
               Science-based yoga and Pilates to build strength, improve flexibility, and move better—wherever you're starting from.
             </p>
           </div>
-          
-          <div className="flex flex-wrap gap-5">
+
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
             <a
               href="#schedule"
-              className="inline-block rounded-full bg-green-700 px-12 py-5 text-base font-medium text-white shadow-xl hover:shadow-2xl transition-all hover:bg-green-800"
+              className="w-full sm:w-auto text-center rounded-full bg-[#5b3426] px-8 py-4 text-white font-medium shadow-xl hover:bg-[#4a2a1f] transition-all"
             >
               View Schedule
             </a>
             <a
               href="#yoga"
-              className="inline-block rounded-full border-2 border-white/60 bg-white/20 backdrop-blur-sm px-12 py-5 text-base font-medium text-white hover:bg-white/30 transition-all"
+              className="w-full sm:w-auto text-center rounded-full border-2 border-[var(--beige-50)]/20 bg-[var(--beige-50)]/10 backdrop-blur-md px-8 py-4 text-[var(--beige-50)] hover:bg-[var(--beige-50)]/20 transition-all"
             >
               Explore Classes
             </a>

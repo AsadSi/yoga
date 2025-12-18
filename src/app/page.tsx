@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
-import Benefits from "@/components/Benefits";
 import Yoga from "@/components/Yoga";
 import Flexibility from "@/components/Flexibility";
 import Pilates from "@/components/Pilates";
@@ -20,7 +19,6 @@ export default function Home() {
       <main>
         <Hero />
         <Intro />
-        <Benefits />
         <Yoga />
         <Flexibility />
         <Pilates />

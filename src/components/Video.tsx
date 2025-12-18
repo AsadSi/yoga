@@ -1,10 +1,10 @@
 export default function Video() {
   return (
-    <section id="video" className="py-32 sm:py-40 bg-white relative overflow-hidden">
+    <section id="video" className="py-32 sm:py-40 relative overflow-hidden section-brown brown-overlay">
       <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <div className="mb-24">
-          <h2 className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-stone-900 mb-12">Practice With Me</h2>
-          <p className="text-2xl text-stone-600 font-light">Watch a sample class to see what to expect</p>
+          <h2 className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-brown mb-12">Practice With Me</h2>
+          <p className="text-2xl text-brown-muted font-light">Watch a sample class to see what to expect</p>
         </div>
         <div className="grid gap-12 md:grid-cols-2">
           <div className="rounded-[3rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all group">
@@ -22,8 +22,8 @@ export default function Video() {
               </video>
             </div>
             <div className="p-10">
-              <h3 className="font-medium text-stone-900 mb-2 text-2xl">Introduction Video</h3>
-              <p className="text-lg text-stone-600 font-light">Get to know my teaching style</p>
+              <h3 className="font-medium text-brown mb-2 text-2xl">Introduction Video</h3>
+              <p className="text-lg text-brown-muted font-light">Get to know my teaching style</p>
             </div>
           </div>
           <div className="rounded-[3rem] overflow-hidden shadow-xl hover:shadow-2xl transition-all group md:mt-16">
@@ -41,8 +41,8 @@ export default function Video() {
               </video>
             </div>
             <div className="p-10">
-              <h3 className="font-medium text-stone-900 mb-2 text-2xl">Sample Class</h3>
-              <p className="text-lg text-stone-600 font-light">Experience a full class</p>
+              <h3 className="font-medium text-brown mb-2 text-2xl">Sample Class</h3>
+              <p className="text-lg text-brown-muted font-light">Experience a full class</p>
             </div>
           </div>
         </div>
