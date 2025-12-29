@@ -81,7 +81,7 @@ export default function Schedule() {
           ))}
         </div>
 
-        {/* Memberships Symmetrical Grid */}
+        {/* Memberships Symmetrical Grid
         <div className="space-y-12">
           <h3 className="text-3xl font-light text-brown">Memberships</h3>
           
@@ -111,7 +111,8 @@ export default function Schedule() {
             ))}
           </div>
         </div>
-
+        */}
+        
         {/* Footer Link */}
         <div className="mt-16 text-center">
           <p className="text-brown-muted text-sm font-light">

@@ -20,13 +20,13 @@ export default function Home() {
         <Hero />
         <Intro />
         <Yoga />
-        <Flexibility />
         <Pilates />
+        <Flexibility />
         <About />
-        <Schedule />
-        <Membership />
         <Gallery />
         <Video />
+        <Schedule />
+        <Membership />
         <Contact />
       </main>
       <Footer />

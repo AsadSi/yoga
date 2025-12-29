@@ -50,10 +50,12 @@ export default function Hero() {
               View Schedule
             </a>
             <a
-              href="#yoga"
+              href="https://momence.com/u/forever-flexible-bTWuXJ?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn8HkjvOGHkcGeMv7Ar05NihdoC9BL7Dqs-hpucbPW1zCeGNsIyWPMRNZLBb0_aem_1m1-neF-BrfjHzXvHtz-TQ"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto text-center rounded-full border-2 border-[var(--beige-50)]/20 bg-[var(--beige-50)]/10 backdrop-blur-md px-8 py-4 text-[var(--beige-50)] hover:bg-[var(--beige-50)]/20 transition-all"
             >
-              Explore Classes
+              Book Classes
             </a>
           </div>
         </div>

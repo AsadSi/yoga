@@ -66,24 +66,26 @@ export default function Membership() {
             {/* Subtle decorative element */}
             <div className="absolute -inset-4 border border-brown/5 rounded-3xl -z-10 transform rotate-2 hidden sm:block"></div>
             
-            <div className="bg-white/60 backdrop-blur-xl p-8 md:p-12 rounded-2xl shadow-[0_20px_50px_rgba(91,52,38,0.05)] border border-white/40 text-center">
+            <div className="bg-white/100 backdrop-blur-xl p-8 md:p-12 rounded-2xl shadow-[0_20px_50px_rgba(91,52,38,0.05)] border border-white/40 text-center">
               <span className="text-brown-700 font-semibold tracking-[0.2em] text-xs uppercase mb-6 block">
-                Start Your Journey
+                Become a Member
               </span>
               <p className="text-brown-muted mb-10 text-lg md:text-xl font-normal leading-relaxed">
-                Ready to increase flexibility, improve mobility, and move with confidence?
+                Commit to your movement. Secure your membership and start transforming your practice today.
               </p>
               
               <a 
-                href="#schedule" 
+                href="https://momence.com/u/forever-flexible-bTWuXJ?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn8HkjvOGHkcGeMv7Ar05NihdoC9BL7Dqs-hpucbPW1zCeGNsIyWPMRNZLBb0_aem_1m1-neF-BrfjHzXvHtz-TQ"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block w-full rounded-full bg-brown text-stone-50 px-10 py-5 text-lg font-medium transition-all hover:bg-brown-700 hover:shadow-xl active:scale-[0.98]"
               >
-                Join the Community
+                Sign Up via Momence
               </a>
               
               <div className="mt-8 flex flex-col gap-2">
                 <p className="text-sm text-brown-muted italic font-light">
-                  Cancel anytime. No long-term contracts.
+                  Simple booking. Seamless payments. Cancel anytime.
                 </p>
                 <div className="flex justify-center gap-1">
                   {[1, 2, 3, 4, 5].map((s) => (

@@ -11,20 +11,22 @@ const BenefitItem = ({ text }: { text: string }) => (
 
 export default function Yoga() {
   return (
-    <section id="yoga" className="relative overflow-hidden section-brown brown-overlay">
-      {/* Hero Background - Higher contrast overlay */}
-      <div className="absolute inset-0 h-[70vh] lg:h-full">
+    <section id="yoga" className="relative overflow-hidden section-brown brown-overlay min-h-screen">
+      {/* Hero Background - Fixed for mobile */}
+      <div className="absolute inset-0 z-0">
         <Image
           src="/images/yoga-pose-5.jpg"
           alt="Yoga practice background"
           fill
           priority
-          className="object-cover opacity-30 lg:opacity-40" 
+          // Changed object-cover and added object-top to ensure the subject stays visible on tall screens
+          className="object-cover object-center lg:object-right-top opacity-30 lg:opacity-40" 
         />
-        <div className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-br from-stone-50 via-stone-50/90 to-transparent"></div>
+        {/* Adjusted gradient to ensure readability on mobile vs desktop */}
+        <div className="absolute inset-0 bg-gradient-to-b from-stone-50 via-stone-50/95 to-stone-50/70 lg:bg-gradient-to-br lg:from-stone-50 lg:via-stone-50/90 lg:to-transparent"></div>
       </div>
       
-      <div className="relative mx-auto max-w-[1400px] px-6 py-24 lg:py-40 z-10">
+      <div className="relative mx-auto max-w-[1400px] px-6 py-20 lg:py-40 z-10">
         
         {/* Header Section */}
         <div className="mb-20 lg:mb-32">
@@ -36,7 +38,7 @@ export default function Yoga() {
           </p>
         </div>
 
-        {/* Offerings Grid - Stronger Text */}
+        {/* Offerings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 mb-40 border-y border-[rgba(91,52,38,0.06)] py-20">
           {[
             { title: "Live Online", desc: "Interactive sessions with real-time technique guidance from anywhere." },
@@ -55,7 +57,6 @@ export default function Yoga() {
 
         {/* Main Disciplines */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-20 items-start">
-          
           {/* Hatha */}
           <div className="flex flex-col">
             <span className="text-brown-700 font-semibold tracking-widest text-xs uppercase mb-4">Grounded & Mindful</span>
@@ -100,7 +101,6 @@ export default function Yoga() {
               <BenefitItem text="Mindful Stillness" />
             </ul>
           </div>
-
         </div>
       </div>
     </section>
