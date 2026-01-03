@@ -52,7 +52,7 @@ export default function Membership() {
               />
               <BenefitItem 
                 title="Progressive Programs" 
-                desc="Follow structured plans designed to build measurable flexibility and lasting strength." 
+                desc="Follow structured plans designed to build measurable mobility and lasting strength." 
               />
               <BenefitItem 
                 title="Community Support" 

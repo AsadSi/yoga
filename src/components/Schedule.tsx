@@ -37,14 +37,7 @@ function Feature({ icon, children }: { icon: string; children: React.ReactNode }
 }
 
 export default function Schedule() {
-  const plans = [
-    { name: "Super Basic", price: "9,99", features: ["users"] },
-    { name: "Silver", price: "29,99", features: ["book", "download", "users"] },
-    { name: "Gold", price: "39,99", features: ["book", "download", "users"] },
-    { name: "Platinum", price: "49,99", features: ["book", "download", "coach", "users"] },
-    { name: "Diamond", price: "69,99", features: ["book", "download", "coach", "users"] },
-    { name: "Ultra VIP", price: "79,99", features: ["book", "download", "coach", "users"] },
-  ];
+  const MOMENCE_URL = "https://momence.com/u/forever-flexible-bTWuXJ";
 
   return (
     <section id="schedule" className="py-24 sm:py-32 section-brown">
@@ -59,67 +52,42 @@ export default function Schedule() {
             </h2>
           </div>
           <div className="max-w-md">
-            <p className="text-lg text-brown-muted font-light leading-relaxed">
-              Transparent pricing for every stage of your practice. No hidden fees, just pure movement.
+            <p className="text-lg text-brown-muted font-light leading-relaxed mb-6">
+              Flexible options for every stage of your practice. Pure movement, tailored to your journey.
             </p>
+            {/* Direct Link to Schedule */}
+            <a 
+              href={MOMENCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-brown border-b border-brown pb-1 hover:opacity-70 transition-opacity"
+            >
+              Check our live schedule on Momence
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
           </div>
         </div>
 
-        {/* Schedule Symmetrical Grid */}
-        <div className="grid md:grid-cols-3 gap-12 mb-32">
-          {[
-            { day: "Monday", class: "Hatha Foundations", time: "6:00 PM - 7:00 PM", loc: "Online (Zoom)" },
-            { day: "Wednesday", class: "Ashtanga Flow", time: "6:30 PM - 7:30 PM", loc: "In-Person • CPH" },
-            { day: "Sunday", class: "Yin & Rest", time: "7:00 PM - 8:15 PM", loc: "Online (Zoom)" }
-          ].map((item, i) => (
-            <div key={i} className="flex flex-col">
-              <span className="text-brown-muted text-xs font-semibold mb-3 tracking-[0.2em] uppercase">{item.day}</span>
-              <h3 className="text-2xl font-light text-brown mb-2">{item.class}</h3>
-              <p className="text-brown-muted font-light text-sm">{item.time}</p>
-              <p className="mt-4 text-[10px] text-brown-muted tracking-widest uppercase">{item.loc}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Memberships Symmetrical Grid
-        <div className="space-y-12">
-          <h3 className="text-3xl font-light text-brown">Memberships</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {plans.map((plan) => (
-              <div key={plan.name} className="flex flex-col p-8">
-                <div className="mb-8">
-                  <h4 className="text-sm font-medium text-brown-muted uppercase tracking-widest">{plan.name}</h4>
-                  <div className="mt-2 flex items-baseline gap-1">
-                    <span className="text-4xl font-extralight text-brown">€{plan.price}</span>
-                    <span className="text-sm text-brown-muted">/mo</span>
-                  </div>
-                </div>
-
-                <div className="flex-grow space-y-5 mb-10">
-                  {plan.features.map((feat) => (
-                    <Feature key={feat} icon={feat}>
-                      {feat === 'users' ? 'Community Access' : 
-                       feat === 'book' ? '1 Course' : 
-                       feat === 'download' ? 'Downloads' : 'Coaching'}
-                    </Feature>
-                  ))}
-                </div>
-
-                <a href="#" className="block w-full text-center py-3.5 px-6 rounded-xl text-xs font-bold tracking-widest uppercase transition-all btn-brown hover:bg-[#4d2a1b]">Start Free Trial</a>
+        {/* CURRENT SCHEDULE (Greyed Out / Commented)
+          ------------------------------------------
+          <div className="grid md:grid-cols-3 gap-12 mb-32 opacity-40 grayscale">
+            {[
+              { day: "Monday", class: "Hatha Foundations", time: "6:00 PM - 7:00 PM", loc: "Online (Zoom)" },
+              { day: "Wednesday", class: "Ashtanga Flow", time: "6:30 PM - 7:30 PM", loc: "In-Person • CPH" },
+              { day: "Sunday", class: "Yin & Rest", time: "7:00 PM - 8:15 PM", loc: "Online (Zoom)" }
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col">
+                <span className="text-brown-muted text-xs font-semibold mb-3 tracking-[0.2em] uppercase">{item.day}</span>
+                <h3 className="text-2xl font-light text-brown mb-2">{item.class}</h3>
+                <p className="text-brown-muted font-light text-sm">{item.time}</p>
+                <p className="mt-4 text-[10px] text-brown-muted tracking-widest uppercase">{item.loc}</p>
               </div>
             ))}
           </div>
-        </div>
         */}
-        
-        {/* Footer Link */}
-        <div className="mt-16 text-center">
-          <p className="text-brown-muted text-sm font-light">
-            All memberships include a 7-day free trial. 
-            <a href="#" className="ml-2 text-brown font-medium underline underline-offset-4">Manage billing</a>
-          </p>
-        </div>
+
       </div>
     </section>
   );

@@ -29,7 +29,7 @@ export default function About() {
                 <h3 className="text-4xl font-light text-brown mb-6">ABOUT KAREN</h3>
                 <div className="space-y-6">
                   <p className="text-brown-muted leading-relaxed text-xl font-light">
-                    I'm Karen, a passionate and certified yoga teacher originally from France. Guided by a deep appreciation for holistic well-being, I have dedicated my journey to the practice and teaching of yoga and flexibility exercises.
+                    I'm Karen, a passionate and certified yoga teacher originally from France. Guided by a deep appreciation for holistic well-being, I have dedicated my journey to the practice and teaching of yoga and mobility exercises.
                   </p>
                   <p className="text-brown-muted leading-relaxed text-xl font-light">
                     My yoga journey began in the heart of France, where I discovered the transformative power of yoga in cultivating not only physical strength but also mental clarity and emotional balance.

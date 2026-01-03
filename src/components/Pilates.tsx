@@ -32,7 +32,7 @@ export default function Pilates() {
             Pilates
           </h2>
           <p className="text-xl md:text-2xl text-brown-muted max-w-2xl font-normal leading-relaxed">
-            Core strength, flexibility, and mindful movement. Programs focused on building a strong foundation and enhancing mobility.
+            Core strength, mobility, and mindful movement. Programs focused on building a strong foundation and enhancing mobility.
           </p>
         </div>
 

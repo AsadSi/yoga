@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import Yoga from "@/components/Yoga";
-import Flexibility from "@/components/Flexibility";
+import Mobility from "@/components/Mobility";
 import Pilates from "@/components/Pilates";
 import About from "@/components/About";
 import Schedule from "@/components/Schedule";
@@ -21,7 +21,7 @@ export default function Home() {
         <Intro />
         <Yoga />
         <Pilates />
-        <Flexibility />
+        <Mobility />
         <About />
         <Gallery />
         <Video />

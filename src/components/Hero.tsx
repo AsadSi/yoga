@@ -38,7 +38,7 @@ export default function Hero() {
               A movement and mindset for unlocking your body's potential.
             </p>
             <p className="text-[var(--beige-50)]/80 text-base md:text-lg leading-relaxed font-light max-w-md">
-              Science-based yoga and Pilates to build strength, improve flexibility, and move better—wherever you're starting from.
+              Science-based yoga and Pilates to build strength, improve mobility, and move better—wherever you're starting from.
             </p>
           </div>
 

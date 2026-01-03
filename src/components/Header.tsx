@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 const services = [
   { label: "Yoga", href: "#yoga" },
   { label: "Pilates", href: "#pilates" },
-  { label: "Flexibility", href: "#flexibility" },
+  { label: "Mobility", href: "#mobility" },
 ];
 
 const secondaryNav = [
@@ -53,8 +53,8 @@ export default function Header() {
           
           {/* Logo */}
           <button onClick={scrollToTop} className="flex items-center gap-3 group">
-            <div className="h-10 w-10 rounded-full overflow-hidden bg-stone-100 shadow-md transition-transform group-hover:scale-105">
-              <img src="/logo.png" alt="Logo" className="h-full w-full object-cover" />
+            <div className="h-10 w-10 transition-transform group-hover:scale-105">
+              <img src="/images/logo.png" alt="Logo" className="h-full w-full object-cover" />
             </div>
             <span className="text-lg font-bold text-[#5b3426] tracking-tight">Forever Flexible</span>
           </button>
