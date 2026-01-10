@@ -44,7 +44,7 @@ export default function Yoga() {
             { title: "Live Online", desc: "Interactive sessions with real-time technique guidance from anywhere." },
             { title: "On-Demand", desc: "Practice on your own schedule with our full library of sessions." },
             { title: "Workshops", desc: "Focused intensives on posture, breathwork, and advanced flexibility." },
-            { title: "In-Person", desc: "Small group sessions held in Malmö & Copenhagen studios." },
+            { title: "In-Person", desc: "Small group sessions held in Copenhagen studios." },
             { title: "Private Coaching", desc: "One-on-one sessions strictly tailored to your specific goals." },
             { title: "Mindful Progress", desc: "Alignment-based movement designed to build lasting strength." }
           ].map((item, i) => (
